@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background: #fafafa;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: #141313 solid 1px;
+}
+#span{
+    width: 30%;
+    height: 100%;
+    background-color: #fafafa;
+}
+#h1{
+    float: left;
+    line-height: 100px;
+    padding:0 15px ;
+    color: teal;
+}
+#img1{
+    height: 80%;
+    padding-top: 8px;
+
+}
+.mb{
+    margin-bottom: 30px;
+}
+nav{
+    width: 59%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: #b6a583;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 150px;
+    text-align: center;
+    margin-right: 150px;
+}
+
+nav a:hover{
+    background-color: rgb(235, 68, 17);
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+main{
+    width: 100%;
+    height: 500px;
+
+    border-top: 3px solid white;
+    /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+    animation-name: s1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+#divs{
+    font-size: 24px;
+    margin: 10px;
+    text-align: justify;
+    direction: rtl;
+    font-family: 'Amiri', serif;
+}
+#imgs{
+    height: 200px;
+}
+#h11{
+    margin: auto;
+    color: #b6a583;
+    font-size: 30px;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
+    font-family: 'Amiri', serif;
+}
+@keyframes s1{
+            33%{
+                background-color: wheat;
+            }
+            66%{
+                background-color:rgb(255, 0, 55);
+            }
+            100%{
+                background-color: rgba(46, 45, 45, 0.476);
+            }
+            
+        }
+#article{
+    width: 70%;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+#div{
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 15px;
+}
+#div h1{
+    border-bottom: 2px solid #000000;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    color: teal;
+}
+#div-box{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+#div-box img{
+    width: 40px;
+    border-bottom: 5px double #DECBA4;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#div-box img:hover{
+    width: 55px;
+    border-bottom: 2px double #DECBA4;
+    transition-duration: 0.5s;
+}
+/*52darse يمكن إستخدام هذا الموقع لتحميل الأيقونات https://www.iconfinder.com/iconsets/peelicons-glyph*/
+/*@media all{
+
+}
+@media print{
+    aside{
+        display: none;
+    }
+}
+/*@media screen{
+
+}*/
+@media only screen and (max-width:1800px)and (min-width:950px){
+    header{
+        font-size: 14px;
+    }
+    nav li{
+       margin: 0%;
+    }
+    #span{
+        width: 43%;
+    }
+    aside{
+        width: 38%;
+        height: 120%;
+
+    }
+    #article{
+        width: 62%;
+    }
+    .mb{
+        margin:0;
+    }
+}
+
+@media only screen and (max-width:950px){
+    header{
+        height: auto;
+         display:block;
+         width: 100%;
+    }
+    #span{
+        width: 100%;
+        text-align: center;
+    }
+    #h1,#img1{
+        float: none;
+    }
+    nav li{
+        display:block;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #img2{
+        width: 70%;
+        height: 70%;
+    }
+    main{
+        height: auto;
+    }
+    #article{
+        height: 230px;
+        width: 100%;
+    }
+    #div{
+        width: 50%;
+        text-align: center;
+        height: 130px;
+    }
+    #divs{
+        text-align: center;
+    }
+    main{
+        background-color: white;
+        /*animation: none;*/
+    }
+    #divyou{
+        position: relative;
+        left: 10px;
+        direction: ltr;
+        transform: translateX(-17px);
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width:500px){
+    header{
+        display: block;
+    }
+    
+    nav li{
+        display:block;
+        width: 100%;
+    }
+    #div{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:733){/*للفصل بين الوضعين العمودي والأفقي*/
+}
+#canon{
+    display: none;
+}
+/*
+landscape للوضع الأفقي
+portrait للوضع العمودي
+*/
+@media print{
+    nav{
+        display: none;
+    }
+    #canon{
+        display: flex;
+    }
+}
+#article3{
+    text-align: center;
+}
+.button{
+    width: 85%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 0px;
+    border: 3px double !important;
+    background-color: tan;
+    cursor: pointer;
+}
+.p{
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Amiri', serif;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(110, 105, 105);
+    -webkit-text-stroke-width: thin;
+}
+.p:hover{
+    -webkit-text-stroke-color: white;
+}
+.button:hover{
+    width: 100%;
+    height: 62px;
+    transition-duration: 0.7s;
+    background-color: darkslategrey;
+}
+#divyou{
+    border: 1px solid #808080;
+    width:97%;
+    text-align: center;
+    position: relative;
+    left: 6%;
+    margin: auto;
+    transform: translateX(-23px);
+}
+#pscout{
+    text-align: left;
+    margin-left: 5px;
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+}
+#imgscout{
+    width: 8%;
+    text-align: right;
+    position: absolute;
+    right: 1%;
+    top: 4%;
+}
+#divyoutub{
+
+
+}
+#vedio{
+    text-align: left;
+    margin-left: 5px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+#imgsabo{
+    width: 25%;
+    position: absolute;
+    direction: ltr;
+    display: block;
+    padding: 5px;
+}
+#youtube{
+    display: inline-block;
+    position: absolute;
+    padding: 3px;
+    margin-top: 1px;
+    right: 1px
+}
+#p515{
+    padding: 2.5px;
+    position: relative;
+    left: -18.9%;
+    top: 6px;
+    border: 1px solid #737373;
+    width: 20px;
+    height: 5px;
+    line-height: -0;
+    color: #737373;
+    border-left: 0px;
+    background-color: #fafafa;
+    font-size: 13px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#sss{
+    color: transparent;
+}
+#aa{
+    text-decoration: none;
+    color: #167ac6;
+}
